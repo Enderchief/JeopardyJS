@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Swiss 911 Compressed";
+  src: url("6a891befed317fa85014538362250762.eot"); /* IE9*/
+  src: url("6a891befed317fa85014538362250762.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("6a891befed317fa85014538362250762.woff2") format("woff2"),
+    /* chrome、firefox */ url("6a891befed317fa85014538362250762.woff")
+      format("woff"),
+    /* chrome、firefox */ url("6a891befed317fa85014538362250762.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("6a891befed317fa85014538362250762.svg#Swiss 911 Compressed")
+      format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "ITC Korinna";
+  src: url("598f92f2bbb58a544a174b7c145ca599.eot"); /* IE9*/
+  src: url("598f92f2bbb58a544a174b7c145ca599.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("598f92f2bbb58a544a174b7c145ca599.woff2") format("woff2"),
+    /* chrome、firefox */ url("598f92f2bbb58a544a174b7c145ca599.woff")
+      format("woff"),
+    /* chrome、firefox */ url("598f92f2bbb58a544a174b7c145ca599.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("598f92f2bbb58a544a174b7c145ca599.svg#ITC Korinna Std") format("svg"); /* iOS 4.1- */
+}
+
+:root {
+  --bg-site: rgb(48, 48, 48);
+  background: var(--bg-site);
+
+  /* --bg-board: hsl(238, 95%, 47%); */
+  --bg-board: hsl(235, 98%, 24%);
+  --fg-primary: hsl(36, 64%, 57%);
+  --fg-secondary: white;
+
+  --size: 4rem;
+}

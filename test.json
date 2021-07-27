@@ -1,0 +1,44 @@
+{
+  "cat1": {
+    "What is the foo": "foo",
+    "What is the bar": "bar",
+    "What is the baz": "baz",
+    "What is the foobar": "foobar",
+    "What is it": "it"
+  },
+  "cat2": {
+    "What is the foo": "foo",
+    "What is the bar": "bar",
+    "What is the baz": "baz",
+    "What is the foobar": "foobar",
+    "What is it": "it"
+  },
+  "cat3": {
+    "What is the foo": "foo",
+    "What is the bar": "bar",
+    "What is the baz": "baz",
+    "What is the foobar": "foobar",
+    "What is it": "it"
+  },
+  "cat4": {
+    "What is the foo": "foo",
+    "What is the bar": "bar",
+    "What is the baz": "baz",
+    "What is the foobar": "foobar",
+    "What is it": "it"
+  },
+  "cat5": {
+    "What is the foo": "foo",
+    "What is the bar": "bar",
+    "What is the baz": "baz",
+    "What is the foobar": "foobar",
+    "What is it": "it"
+  },
+  "cat6": {
+    "What is the foo": "foo",
+    "What is the bar": "bar",
+    "What is the baz": "baz",
+    "What is the foobar": "foobar",
+    "What is it": "it"
+  }
+}
