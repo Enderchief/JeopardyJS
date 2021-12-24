@@ -4,6 +4,8 @@
   export let money;
   export let questions;
   export let onQuestion;
+
+  console.log(questions);
 </script>
 
 <div class="board">
@@ -11,6 +13,7 @@
     <div class="column">
       <div class="category item"><p>{category}</p></div>
       {#each Object.keys(questions[category]) as item, j}
+        <!-- {@debug i, j, $game} -->
         {#if !$game[i][j]}
           <div class="item" on:click={onQuestion(category, item, i, j)}>
             <p>${money[j]}</p>

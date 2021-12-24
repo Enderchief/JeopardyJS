@@ -1,14 +1,9 @@
 import { writable } from "svelte/store";
 
 const createGameStore = () => {
-  const { set, subscribe, update } = writable([
-    Array(5),
-    Array(5),
-    Array(5),
-    Array(5),
-    Array(5),
-    Array(5),
-  ]);
+  const { set, subscribe, update } = writable(
+    [...Array(6)].map(() => Array(5))
+  );
 
   return {
     subscribe,

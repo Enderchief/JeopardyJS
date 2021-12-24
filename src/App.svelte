@@ -6,42 +6,42 @@
   const money = [200, 400, 600, 800, 1000];
   let questions = {
     cat1: {
-      "What is the foo": "foo",
+      "What is the a": "foo",
       "What is the bar": "bar",
       "What is the baz": "baz",
       "What is the foobar": "foobar",
       "What is it": "it",
     },
     cat2: {
-      "What is the foo": "foo",
+      "What is the a": "a",
       "What is the bar": "bar",
       "What is the baz": "baz",
       "What is the foobar": "foobar",
       "What is it": "it",
     },
     cat3: {
-      "What is the foo": "foo",
+      "What is the a": "a",
       "What is the bar": "bar",
       "What is the baz": "baz",
       "What is the foobar": "foobar",
       "What is it": "it",
     },
     cat4: {
-      "What is the foo": "foo",
+      "What is the a": "a",
       "What is the bar": "bar",
       "What is the baz": "baz",
       "What is the foobar": "foobar",
       "What is it": "it",
     },
     cat5: {
-      "What is the foo": "foo",
+      "What is the a": "a",
       "What is the bar": "bar",
       "What is the baz": "baz",
       "What is the foobar": "foobar",
       "What is it": "it",
     },
     cat6: {
-      "What is the foo": "foo",
+      "What is the a": "a",
       "What is the bar": "bar",
       "What is the baz": "baz",
       "What is the foobar": "foobar",
@@ -59,22 +59,22 @@
       const answer = questions[cat][question];
       console.log({ cat, question, answer });
       game.set(i, j);
-      current = {question, answer}
+      current = { question, answer };
       console.table(game.get());
-      state.set("question")
+      state.set("question");
     };
   }
 
-  let current;
+  let current: { question: string; answer: string } = {
+    question: "",
+    answer: "",
+  };
 
   function input(e) {
     const elem = e.target as HTMLInputElement;
     const files = elem.files;
     console.log(files);
-    
   }
-
-
 </script>
 
 <div class="main">
@@ -86,7 +86,7 @@
 </div>
 
 <div class="upload">
-  <input type="file" on:input={input} accept=".json">
+  <input type="file" on:input={input} accept=".json" />
 </div>
 
 <style>
