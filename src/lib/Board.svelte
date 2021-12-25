@@ -15,7 +15,7 @@
       {#each Object.keys(questions[category]) as item, j}
         <!-- {@debug i, j, $game} -->
         {#if !$game[i][j]}
-          <div class="item" on:click={onQuestion(category, item, i, j)}>
+          <div class="item in" on:click={onQuestion(category, item, i, j)}>
             <p>${money[j]}</p>
           </div>
         {:else}
@@ -27,19 +27,7 @@
 </div>
 
 <style>
-  :global():root {
-    --bg-site: rgb(48, 48, 48);
-    background: var(--bg-site);
-
-    /* --bg-board: hsl(238, 95%, 47%); */
-    --bg-board: hsl(235, 98%, 24%);
-    --fg-primary: hsl(36, 64%, 57%);
-    --fg-secondary: white;
-
-    --size: 4rem;
-  }
-
-  :global().board {
+  .board {
     display: flex;
     border: calc(0.2 * var(--size)) solid black;
   }
@@ -82,10 +70,16 @@
     -ms-user-select: none;
   }
 
+  .item.in:hover {
+    background: var(--bg-board-dark);
+    cursor: pointer;
+  }
+
   .category {
     text-transform: uppercase;
     color: var(--fg-secondary);
-    font-size: calc(0.8 * var(--size));
+    font-size: calc(0.7 * var(--size));
+    line-height: calc(0.7 * var(--size));
     border-bottom-width: calc(0.2 * var(--size));
   }
 </style>

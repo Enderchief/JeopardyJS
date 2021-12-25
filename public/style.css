@@ -22,10 +22,11 @@
   --bg-site: rgb(48, 48, 48);
   background: var(--bg-site);
 
-  /* --bg-board: hsl(238, 95%, 47%); */
   --bg-board: hsl(235, 98%, 24%);
+  --bg-board-dark: hsl(236, 97%, 14%);
   --fg-primary: hsl(36, 64%, 57%);
   --fg-secondary: white;
 
   --size: 4rem;
 }
+
